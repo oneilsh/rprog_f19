@@ -1,0 +1,18 @@
+---
+title: "hw1"
+output: pdf_document
+---
+
+
+## R Markdown
+
+This is an R Markdown document, (a modification of the default one created by File -> New File -> R Markdown...). Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. This document is configured to produce a PDF. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both text (such as these paragraphs) as well as the output of any embedded R code "chunks" within the document. R code chunks are indicated like this:
+
+```{r}
+nums <- c(1, 2, 3, 4)
+print(nums)
+```
+
+When knitted, the output of the lines appears right after the chunk.
