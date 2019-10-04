@@ -1,7 +1,0 @@
----
-title: "hw2"
-output: pdf_document
----
-
-
-## Hw 2
