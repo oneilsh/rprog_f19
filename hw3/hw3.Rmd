@@ -9,7 +9,8 @@ output:
 Here we read in the `states` data frame, directly from a URL (a cool feature of `read.table()`):
 
 ```{r}
-states <- read.table("http://library.open.oregonstate.edu/doc/computationalbiology/states.txt", 
+# ../ reads the file from the folder above the current one
+states <- read.table("../states.txt", 
                      header = TRUE,
                      sep = "\t",
                      comment.char = "#",
