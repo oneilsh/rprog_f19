@@ -6,7 +6,7 @@ output:
 
 ## Problem 1
 
-Check out this file (which can also be grabbed from [here](www.updatethis.com)).:
+Check out this file (which can also be grabbed from here:  [https://raw.githubusercontent.com/oneilsh/rprog_f19/master/hw4/PZ.annot.txt](https://raw.githubusercontent.com/oneilsh/rprog_f19/master/hw4/PZ.annot.txt)).:
 
 ```{r}
 # ../ reads the file from the folder above the current one
