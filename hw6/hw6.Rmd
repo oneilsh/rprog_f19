@@ -1,0 +1,46 @@
+---
+title: "hw6"
+output: 
+  pdf_document
+---
+
+This homework is not for a grade. It's for cool points. (It's worth 15 cool points, FYI.)
+
+## IMDB
+
+For the moment, let's pretend it's 2014, since that's when this dataset was generated. 
+
+I, Mr. Moneybags M. TvPerson, have recently acquired copyrights to *all* television shows. There are many of them, including old ones that no longer run. I want to make some decisions about which shows I should invest in. I managed to get this dataset from the IMDB database, which describes, for every episode of every show
+listed, the popularity ratings of the show. 
+
+The columns are:
+
+* `name`: The name of the show, suffixed with the year it first aired. ("Reboots" have the same name, but
+I consider them different shows, so I just added the first year of every show to the name.)
+* `first_year`: the year the show first aired
+* `episode_name`: the name of the episode reviewed
+* `season`: which season of the show the episode aired in. 
+* `episode_number`: the episode number within the season
+* `star_1`: how many 1-star ratings this episoded got on IMDB
+* `star_2`: how many 2-star ratings the episode got
+
+...
+
+
+```{r}
+imdb <- read.table("imdb_tv_shows.txt", 
+                   header = TRUE, 
+                   sep = "\t", 
+                   stringsAsFactors = FALSE, 
+                   quote = "",              # no characters are used to "quote" entries in columns
+                   comment.char = "")       # no characters are used for comments
+
+print(head(imdb))
+```
+
+
+## Help me impress my friends and make lots of money
+
+Your goal, should you choose to accept it, is to help me use the data to determine which shows were successful (don't ask me what makes a show successful; I'm just the boss) and which were losers. Some of my friends
+are data scientists, so there should probably be some statistics involved to impress them. On the other
+hand, most of my friends like pretty pictures, so some super-sweet data visualizations are a definite plus. 
